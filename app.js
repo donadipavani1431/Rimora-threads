@@ -1,5 +1,3 @@
-const runtimeOrigin = window.location.origin;
-const API_BASE = window.RIMORA_API_BASE || `${runtimeOrigin}/api`;
 const CART_KEY = 'rimora_cart_v1';
 
 let productsMap = new Map();
@@ -134,13 +132,26 @@ const toggleCart = (open) => {
 async function bootstrap() {
   try {
     updateStatus('Loading storefront content...');
-    const response = await fetch(`${API_BASE}/content`);
-    const data = await response.json();
 
-    if (!response.ok) {
-      throw new Error(data.message || 'Failed to fetch content.');
-    }
-
+    const data = {
+      brand: {
+        name: "Rimora Threads",
+        address: "Fashion Street",
+        supportEmail: "support@rimora.com",
+        supportPhone: "+91 9876543210"
+      },
+      hero: {
+        badge: "New Collection",
+        heading: "Modern Fashion",
+        subheading: "Premium outfits for everyone",
+        ctaPrimary: "Shop Now",
+        ctaSecondary: "Explore"
+      },
+      categories: [],
+      products: [],
+      testimonials: [],
+      instagram: []
+    };
     document.getElementById('brand-name').textContent = data.brand.name;
 
     byId('hero').innerHTML = `
