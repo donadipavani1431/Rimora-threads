@@ -140,7 +140,7 @@ async function bootstrap() {
         supportEmail: "support@rimora.com",
         supportPhone: "+91 9876543210"
       },
-      hero: {
+hero: {
   badge: "LATEST COLLECTION",
   heading: "Spring Summer Effortless Chic Lifestyle",
   subheading: "A curated drop of breathable silhouettes and modern romance designed for real celebrations.",
@@ -161,7 +161,7 @@ async function bootstrap() {
     image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518"
   }
 ],
-   products: [
+products: [
   {
     id: 1,
     title: "Elegant White Gown",
