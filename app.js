@@ -147,8 +147,36 @@ async function bootstrap() {
         ctaPrimary: "Shop Now",
         ctaSecondary: "Explore"
       },
-      categories: [],
-      products: [],
+      categories: [
+  {
+    name: "Men",
+    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
+  },
+  {
+    name: "Women",
+    image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c"
+  }
+],
+      products: [
+  {
+    id: 1,
+    title: "Leather Jacket",
+    category: "Men",
+    price: 99,
+    oldPrice: 129,
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1523398002811-999ca8dec234"
+  },
+  {
+    id: 2,
+    title: "Casual Hoodie",
+    category: "Women",
+    price: 59,
+    oldPrice: 79,
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+  }
+],
       testimonials: [],
       instagram: []
     };
