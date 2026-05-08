@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rimora Threads | Modern Fashion Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <p>Free delivery on orders over $99 • New arrivals every Friday</p>
+    </header>
+
+    <nav class="navbar">
+      <h1 id="brand-name">Rimora Threads</h1>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="#categories">Shop</a></li>
+        <li><a href="#products">Collections</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+      </ul>
+      <button class="cart-button" id="cart-button" aria-label="Open cart">
+        Cart (<span id="cart-count">0</span>)
+      </button>
+    </nav>
+
+    <aside class="cart-panel" id="cart-panel" aria-hidden="true">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="close-cart" aria-label="Close cart">✕</button>
+      </div>
+      <div id="cart-items"></div>
+      <div class="cart-footer">
+        <p>Total: <strong id="cart-total">$0.00</strong></p>
+        <button id="checkout-btn">Checkout</button>
+      </div>
+    </aside>
+    <div class="cart-backdrop" id="cart-backdrop"></div>
+
+    <section class="hero" id="hero"></section>
+    <p class="status-message" id="status-message" data-type="info"></p>
+
+    <main>
+      <section class="section" id="categories">
+        <div class="section-heading">
+          <h2>Shop by Category</h2>
+          <p>Browse curated picks designed for all-day wear and effortless styling.</p>
+        </div>
+        <div class="grid categories-grid" id="categories-grid"></div>
+      </section>
+
+      <section class="section dark" id="products">
+        <div class="section-heading">
+          <h2>Trending Products</h2>
+          <p>Best-selling pieces from the latest Rimora Threads drop.</p>
+        </div>
+        <div class="grid product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="section-heading">
+          <h2>What Customers Say</h2>
+          <p>Trusted by style lovers across the globe.</p>
+        </div>
+        <div class="grid testimonial-grid" id="testimonial-grid"></div>
+      </section>
+
+      <section class="section" id="instagram">
+        <div class="section-heading">
+          <h2>@rimorathreads</h2>
+          <p>Follow us for daily outfit inspiration and new launches.</p>
+        </div>
+        <div class="grid insta-grid" id="insta-grid"></div>
+      </section>
+
+      <section class="section newsletter" id="newsletter">
+        <h2>Join the Rimora Circle</h2>
+        <p>Get launch alerts, exclusive promotions, and style guides in your inbox.</p>
+        <form id="newsletter-form">
+          <input type="email" id="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletter-message"></p>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
