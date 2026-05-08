@@ -141,40 +141,53 @@ async function bootstrap() {
         supportPhone: "+91 9876543210"
       },
       hero: {
-        badge: "New Collection",
-        heading: "Modern Fashion",
-        subheading: "Premium outfits for everyone",
-        ctaPrimary: "Shop Now",
-        ctaSecondary: "Explore"
-      },
-      categories: [
-  {
-    name: "Men",
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
-  },
+  badge: "LATEST COLLECTION",
+  heading: "Spring Summer Effortless Chic Lifestyle",
+  subheading: "A curated drop of breathable silhouettes and modern romance designed for real celebrations.",
+  ctaPrimary: "Read More",
+  ctaSecondary: "Shop Now"
+},
+   categories: [
   {
     name: "Women",
     image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c"
+  },
+  {
+    name: "Men",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+  },
+  {
+    name: "Luxury",
+    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518"
   }
 ],
-      products: [
+   products: [
   {
     id: 1,
-    title: "Leather Jacket",
-    category: "Men",
-    price: 99,
-    oldPrice: 129,
-    rating: 4.8,
-    image: "https://images.unsplash.com/photo-1523398002811-999ca8dec234"
+    title: "Elegant White Gown",
+    category: "Women",
+    price: 199,
+    oldPrice: 249,
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
   },
   {
     id: 2,
-    title: "Casual Hoodie",
-    category: "Women",
-    price: 59,
-    oldPrice: 79,
-    rating: 4.5,
-    image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+    title: "Classic Black Suit",
+    category: "Men",
+    price: 149,
+    oldPrice: 189,
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf"
+  },
+  {
+    id: 3,
+    title: "Luxury Sherwani",
+    category: "Traditional",
+    price: 229,
+    oldPrice: 299,
+    rating: 5.0,
+    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518"
   }
 ],
       testimonials: [],
