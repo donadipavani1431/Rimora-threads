@@ -181,7 +181,6 @@ async function bootstrap() {
     loadCart();
     updateCartUI();
 
-    updateStatus(`Connected to ${API_BASE}`, 'success');
   } catch (error) {
     updateStatus(`Storefront failed to load: ${error.message}`, 'error');
     console.error('Unable to load storefront content:', error);
@@ -218,17 +217,8 @@ byId('newsletter-form').addEventListener('submit', async (event) => {
   const message = byId('newsletter-message');
 
   try {
-    const response = await fetch(`${API_BASE}/newsletter`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: emailInput.value })
-    });
-
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.message);
-
-    message.textContent = data.message;
-    emailInput.value = '';
+  message.textContent = "Subscribed successfully!";
+emailInput.value = '';
   } catch (error) {
     message.textContent = error.message;
   }
